@@ -1,38 +1,46 @@
-<html>
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head> <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-<br><br><br><br><style>
-         input[type=button] {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Verification</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Verdana, sans-serif;
+        }
+        input[type=button] {
             background-color: brown;
             border: none;
-            text-decoration: none;
             color: white;
             padding: 20px 20px;
-            margin: 20px 20px;
+            margin: 20px;
             cursor: pointer;
-         }
-      </style>
-<center><script type="text/javascript">
-<!--
-function confirmation() {
-	var answer = confirm("Click & Confirm you are not a BOT?")
-	if (answer){
-		alert("Thanks for verifying")
-		window.location = window.open('https://coupanza.com/', '_blank', 'noopener', 'noreferrer');}
-	else{
-		alert("You are not verified")
-		window.location = "https://coupanza.com/";
-	}
-}
-//-->
-</script>
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function confirmation() {
+            var answer = confirm("Click & Confirm you are not a BOT?");
+            if (answer) {
+                alert("Thanks for verifying!");
+                window.open('https://coupanza.com/', '_blank'); // Opens new page
+                window.location.href = 'https://coupanzastore.com/'; // Redirects the current page
+            } else {
+                alert("You are not verified.");
+            }
+        }
+    </script>
 </head>
-<body><img src="robot.png" alt="Google Robot" style="width:150px;height:150px;">
-<form><br><br>
-<input type="button" onclick="confirmation()" value="Click Here"><br><br><p style="font-family:verdana" font color="#9900FF"><b>Confirm you are not a BOT</b></p></center>
-</form>
+<body>
+    <br><br>
+    <img src="robot.png" alt="Google Robot" style="width:150px;height:150px;">
+    <form>
+        <br><br>
+        <input type="button" onclick="confirmation()" value="Click Here">
+        <br><br>
+        <p style="color:#9900FF;"><b>Confirm you are not a BOT</b></p>
+    </form>
 </body>
-
 </html>
-    
- 
